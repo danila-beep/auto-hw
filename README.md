@@ -1,1 +1,1 @@
-Your site is live at https://danila-beep.github.io/auto-hw/
+https://danila-beep.github.io/auto-hw/
