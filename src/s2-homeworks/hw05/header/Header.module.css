@@ -1,8 +1,28 @@
 .burgerMenuIcon {
+    margin: 0;
+    cursor: pointer;
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    padding: .7rem .7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
 }
