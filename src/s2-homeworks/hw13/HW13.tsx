@@ -35,12 +35,12 @@ const HW13 = () => {
     }
 
     axios
-      .post<AxiosResponse>(url, { success: x })
+      .post(url, { success: x })
       .then((res) => {
         setCode("Код 200!");
         setImage(success200);
-        setInfo("...всё ок");
-        setText("код 200 - обычно означает что скорее всего всё ок)");
+        setInfo(res.data.info);
+        setText(res.data.errorText);
         // дописать
       })
       .catch((err) => {
