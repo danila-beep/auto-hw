@@ -39,9 +39,8 @@ const HW13 = () => {
       .then((res) => {
         setCode("Код 200!");
         setImage(success200);
-        setInfo(res.data.errorText);
+        setInfo(res.data.info);
         setText(res.data.errorText);
-        // дописать
       })
       .catch((err) => {
         if (err.response.status) {
@@ -78,7 +77,6 @@ const HW13 = () => {
             xType={"secondary"}
             // дописать
             disabled={info === "...loading" ? true : false}
-
           >
             Send false
           </SuperButton>
@@ -88,7 +86,6 @@ const HW13 = () => {
             xType={"secondary"}
             // дописать
             disabled={info === "...loading" ? true : false}
-
           >
             Send undefined
           </SuperButton>
@@ -98,7 +95,6 @@ const HW13 = () => {
             xType={"secondary"}
             // дописать
             disabled={info === "...loading" ? true : false}
-
           >
             Send null
           </SuperButton>
